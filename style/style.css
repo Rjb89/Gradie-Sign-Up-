@@ -5,8 +5,9 @@
 }
 :root {
   --white: hsl(0, 0%, 100%);
-  --Dark-blue: hsl(218, 44%, 22%);
+  --Dark-blue:  #013243;
   --Grayish-blue: hsl(218, 9%, 37%);
+  --Light-blue:#4f8598;
 }
 body {
   height: 100vh;
@@ -34,12 +35,17 @@ main {
   flex-direction: column;
   border-radius: 0.625rem 0 0 0.625rem;
 }
+P{
+  color: var(--Light-blue);
+}
 h1,h2{
 font-size: 2rem;
 font-family: "Roboto", sans-serif;
-
 }
-h1,p {
+h2{
+  margin-bottom: 1rem;
+}
+h1 {
   color: rgb(255, 255, 255);
   text-align: center;
 }
@@ -48,8 +54,7 @@ h1,p {
   max-height: 100%;
 }
 .sing_in {
-    padding: 2rem 2rem 0 2rem;
-
+  padding: 2rem 2rem 0 2rem;
   background-color: var(--white);
   display: flex;
   flex-direction: column;
@@ -57,4 +62,23 @@ h1,p {
     max-width: 375px;
 }
 .sing_in{
+}
+input{
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.button{
+  padding: .625rem;
+background-color: var(--Dark-blue);
+margin-top: 1rem;
+color: var(--white);
+border-radius: 05px;
+border: none;
+}
+#email,#password{
+  width: 80%;
+  margin-top: .625rem;
+}
+::placeholder{
+  color: var(--Grayish-blue);
 }
