@@ -61,10 +61,7 @@ h1 {
   border-radius: 0 0.625rem 0.625rem 0;
   max-width: 375px;
 }
-input {
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
+
 .button {
   padding: 1rem;
   background-color: var(--Dark-blue);
@@ -78,6 +75,8 @@ input {
 #password {
   width: 80%;
   margin-top: 0.625rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 ::placeholder {
   color: var(--Grayish-blue);
@@ -87,8 +86,22 @@ input {
       flex-direction: column;
     }
     .phone {
-      border-radius: 0.625rem 0.625rem 0 0 ;}
+      border-radius: 0.625rem 0.625rem 0 0 ;
+    width: 100%;}
       .sing_in{
-        border-radius: 0 0 0.625rem 0.625rem  ;
+        border-radius: 0 0 0.625rem 0.625rem ; 
+        width: 100%;
+      }
+      #email,
+      #password {
+        width: 80%;
+        margin-top: 0.3rem;
+        padding: .625rem;
+        margin-bottom: .625rem;
+      }
+      .button {
+        padding: .625rem;
+        margin: .625rem 0 3rem 0;
+        width: 80%;
       }
     }
